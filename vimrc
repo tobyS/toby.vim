@@ -10,7 +10,7 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 
-" ... register Vundle bundles
+Bundle 'tobyS/vimtip'
 
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
