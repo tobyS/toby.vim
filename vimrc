@@ -103,8 +103,12 @@ set ttyfast
 set ruler
 set laststatus=2
 
+" Repair wired terminal/vim settings
+set backspace=start,eol,indent
 " ???
 set ofu=syntaxcomplete#Complete
+" Allow file inline modelines to provide settings
+set modeline
 
 " Set mapping for CSApprox
 " let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
@@ -150,6 +154,8 @@ autocmd InsertLeave <buffer> se nopaste
 " Twig template highlighting
 autocmd BufRead *.twig set filetype=twig
 autocmd BufRead *.html.twig set filetype=htmltwig
+" Handle *.phps as PHP files
+au BufRead,BufNewFile *.phps		set filetype=php
 
 " VIMTips
 let g:vimtip_tips = []
