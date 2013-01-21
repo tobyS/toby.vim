@@ -1,0 +1,1 @@
+../modules/disable_automatic_wrapping_of_all_text.vim

@@ -1,0 +1,1 @@
+../modules/whitespace_trail_removal_on_cr.vim
