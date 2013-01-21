@@ -104,8 +104,6 @@ set ruler
 set laststatus=2
 
 " ???
-set backspace=indent,eol,start
-" ???
 set ofu=syntaxcomplete#Complete
 
 " Set mapping for CSApprox
