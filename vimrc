@@ -30,6 +30,8 @@ Bundle "altercation/vim-colors-solarized"
 Bundle "danro/rename.vim"
 " XML editing
 Bundle "sukima/xmledit"
+" Testing framework for VIM scripts
+Bundle "runVimTests"
 
 " Approximate colorschemes
 " Seems to be not needed
