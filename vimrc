@@ -33,6 +33,10 @@ Bundle "sukima/xmledit"
 " Testing framework for VIM scripts
 Bundle "runVimTests"
 
+" Local development
+Bundle "/home/dotxp/dev/VIM/pdv.git"
+Bundle "/home/dotxp/dev/VIM/vmustache.git"
+
 " Approximate colorschemes
 " Seems to be not needed
 " Bundle 'godlygeek/csapprox'
