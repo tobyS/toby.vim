@@ -26,6 +26,10 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-abolish'
 " Solarized color scheme
 Bundle "altercation/vim-colors-solarized"
+" :Rename command
+Bundle "danro/rename.vim"
+" XML editing
+Bundle "sukima/xmledit"
 
 " Approximate colorschemes
 " Seems to be not needed
