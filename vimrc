@@ -71,6 +71,7 @@ set expandtab
 set nocompatible
 set nopaste
 set hidden
+set nowrap
 
 " Set the mapleader and local map leader to ,
 let mapleader = ","
