@@ -17,7 +17,7 @@ Bundle 'ervandew/supertab'
 " Display trailing whitespaces
 Bundle 'jakobwesthoff/whitespacetrail'
 " Fancy snippet machine
-Bundle 'msanders/snipmate.vim'
+Bundle 'SirVer/ultisnips'
 " Nice title bar
 Bundle 'Lokaltog/powerline'
 " Syntaxt checks
@@ -175,7 +175,6 @@ call add(g:vimtip_tips, "Search in pman: <SHIFT>+<k>")
 call add(g:vimtip_tips, "Jump to matching brace: <%>")
 call add(g:vimtip_tips, "Re-indent code: <=>")
 call add(g:vimtip_tips, "Indent inner / outer block: >iB / >aB")
-call add(g:vimtip_tips, "Snip complete: cls, if, fn, fe, fi")
 call add(g:vimtip_tips, "\\c in Such-Regex = case-insensitive")
 call add(g:vimtip_tips, ":r <file> paste the given file at the current position")
 
