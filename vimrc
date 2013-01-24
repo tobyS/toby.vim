@@ -215,5 +215,8 @@ map <F6> :setlocal spell! spelllang=de<cr>
 
 python from powerline.bindings.vim import source_plugin; source_plugin()
 
+" Configure Ultisnips
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+
 " Remap leader for easy motion
 let g:EasyMotion_leader_key = '<Leader>'
