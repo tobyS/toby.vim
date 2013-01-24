@@ -30,6 +30,9 @@ Bundle "altercation/vim-colors-solarized"
 Bundle "danro/rename.vim"
 " XML editing
 Bundle "sukima/xmledit"
+" Easy motion using <Leader><w>
+Bundle "Lokaltog/vim-easymotion"
+
 " Testing framework for VIM scripts
 Bundle "runVimTests"
 
@@ -168,6 +171,7 @@ au BufRead,BufNewFile *.phps		set filetype=php
 
 " VIMTips
 let g:vimtip_tips = []
+call add(g:vimtip_tips, "Easy motion with <,><w>")
 call add(g:vimtip_tips, "Register <*> is middle mouse clipboard")
 call add(g:vimtip_tips, "Search in pman: <SHIFT>+<k>")
 call add(g:vimtip_tips, "Jump to matching brace: <%>")
@@ -210,3 +214,6 @@ map <F5> :setlocal spell! spelllang=en_us<cr>
 map <F6> :setlocal spell! spelllang=de<cr>
 
 python from powerline.bindings.vim import source_plugin; source_plugin()
+
+" Remap leader for easy motion
+let g:EasyMotion_leader_key = '<Leader>'
