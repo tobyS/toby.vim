@@ -173,11 +173,9 @@ au BufRead,BufNewFile *.phps		set filetype=php
 let g:vimtip_tips = []
 call add(g:vimtip_tips, "Easy motion with <,><w>")
 call add(g:vimtip_tips, "Register <*> is middle mouse clipboard")
-call add(g:vimtip_tips, "Search in pman: <SHIFT>+<k>")
 call add(g:vimtip_tips, "Jump to matching brace: <%>")
 call add(g:vimtip_tips, "Re-indent code: <=>")
 call add(g:vimtip_tips, "Indent inner / outer block: >iB / >aB")
-call add(g:vimtip_tips, "\\c in Such-Regex = case-insensitive")
 call add(g:vimtip_tips, ":r <file> paste the given file at the current position")
 
 autocmd VimEnter * call vimtip#NextTip()
