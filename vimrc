@@ -216,5 +216,9 @@ python from powerline.bindings.vim import source_plugin; source_plugin()
 " Configure Ultisnips
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 
+" Configure PDV
+let g:pdv_template_dir = "/home/dotxp/.vim/bundle/pdv/templates_snip"
+nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
+
 " Remap leader for easy motion
 let g:EasyMotion_leader_key = '<Leader>'
