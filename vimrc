@@ -45,8 +45,6 @@ Bundle "/home/dotxp/dev/VIM/vmustache.git"
 " Trying ...
 """"""""""""
 
-" Fuzzy search through various items (files, etc.)
-Bundle 'kien/ctrlp.vim'
 " Git integration
 Bundle 'tpope/vim-fugitive'
 " Rewrap argument lists
