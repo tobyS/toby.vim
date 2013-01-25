@@ -12,8 +12,6 @@ Bundle 'gmarik/vundle'
 
 " ... register Vundle bundles
 Bundle 'tobyS/vimtip'
-" Autocompletion of everything
-Bundle 'ervandew/supertab'
 " Display trailing whitespaces
 Bundle 'jakobwesthoff/whitespacetrail'
 " Fancy snippet machine
@@ -43,6 +41,10 @@ Bundle "/home/dotxp/dev/VIM/vmustache.git"
 " Approximate colorschemes
 " Seems to be not needed
 " Bundle 'godlygeek/csapprox'
+
+" Autocompletion of everything
+" TODO: Configure completely
+"Bundle 'ervandew/supertab'
 
 """"""""""""
 " Trying ...
