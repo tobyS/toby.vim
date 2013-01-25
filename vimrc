@@ -148,10 +148,6 @@ set listchars=tab:▸\ ,eol:¬
 " Save file as root using sudo
 cnoremap w!! w !sudo tee % >/dev/null
 
-" Set a custom snippets directory. This ensures our own snippets are used
-" instead of the ones provided with snipmate
-let g:snippets_dir = $HOME . "/.vim/snippets/"
-
 " MovingThroughCamelCaseWords
 nnoremap <silent><C-Left>  :<C-u>cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%^','bW')<CR>
 nnoremap <silent><C-Right> :<C-u>cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%$','W')<CR>
@@ -217,6 +213,9 @@ python from powerline.bindings.vim import source_plugin; source_plugin()
 
 " Configure Ultisnips
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
+" Set a custom snippets directory
+let g:UltiSnipsSnippetsDir = $HOME . "/.vim/snippets/"
+let g:UltiSnipsSnippetDirectories = ["snippets"]
 
 " Configure PDV
 let g:pdv_template_dir = "/home/dotxp/.vim/bundle/pdv/templates_snip"
