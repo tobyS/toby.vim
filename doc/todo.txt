@@ -9,4 +9,5 @@ To try
   - Change surrounding chars (e.g. ' => ")
 - https://wincent.com/products/command-t
   - Fancy file search
-
+- https://github.com/goldfeld/vim-seek
+  - Seek on the line
