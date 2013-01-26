@@ -7,3 +7,6 @@ To try
 
 - https://github.com/tpope/vim-surround
   - Change surrounding chars (e.g. ' => ")
+- https://wincent.com/products/command-t
+  - Fancy file search
+
