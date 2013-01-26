@@ -224,8 +224,3 @@ nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
 
 " Remap leader for easy motion
 let g:EasyMotion_leader_key = '<Leader>'
-
-" Register skeleton directory
-call skeletons#RegisterSkeletons($HOME . "/.vim/skeletons")
-" Trigger skeletons on new file
-autocmd BufNewFile * call skeletons#InsertSkeleton()
