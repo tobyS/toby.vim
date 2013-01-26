@@ -37,6 +37,7 @@ Bundle "runVimTests"
 " Local development
 Bundle "/home/dotxp/dev/VIM/pdv.git"
 Bundle "/home/dotxp/dev/VIM/vmustache.git"
+Bundle "/home/dotxp/dev/VIM/skeletons.git"
 
 " Approximate colorschemes
 " Seems to be not needed
@@ -223,3 +224,8 @@ nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
 
 " Remap leader for easy motion
 let g:EasyMotion_leader_key = '<Leader>'
+
+" Register skeleton directory
+call skeletons#RegisterSkeletons($HOME . "/.vim/skeletons")
+" Trigger skeletons on new file
+autocmd BufNewFile * call skeletons#InsertSkeleton()
