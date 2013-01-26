@@ -1,8 +1,8 @@
 <?php
 
-namespace ${1:\Foo\Bar\Baz};
+namespace ${1:`!v PathToNamespace(expand("%:h"))`};
 
-class ${2:LalaClass}
+class ${2:`!v expand("%:t:r")`}
 {
     ${3}
 }
