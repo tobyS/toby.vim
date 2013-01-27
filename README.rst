@@ -17,6 +17,10 @@ Install
 
         :BundleInstall
 
+5. If you want to use the powerline, you need to install it, too::
+
+        pip install --user git+git://github.com/Lokaltog/powerline
+
 Thanks for inspirations to
 
 - Benjamin Eberlei (https://github.com/beberlei)
