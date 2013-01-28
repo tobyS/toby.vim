@@ -30,6 +30,8 @@ Bundle "danro/rename.vim"
 Bundle "sukima/xmledit"
 " Easy motion using <Leader><w>
 Bundle "Lokaltog/vim-easymotion"
+" Insert mode autocomplete management
+Bundle "ervandew/supertab"
 " Vmustache template engine, prerequisite for PDV
 Bundle "tobyS/vmustache"
 " PHP Documentor for VIM
@@ -48,10 +50,6 @@ Bundle "runVimTests"
 " Approximate colorschemes
 " Seems to be not needed
 " Bundle 'godlygeek/csapprox'
-
-" Autocompletion of everything
-" TODO: Configure completely
-"Bundle 'ervandew/supertab'
 
 """"""""""""
 " Trying ...
@@ -219,7 +217,9 @@ map <F6> :setlocal spell! spelllang=de<cr>
 python from powerline.bindings.vim import source_plugin; source_plugin()
 
 " Configure Ultisnips
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsExpandTrigger = "<Tab>"
+let g:UltiSnipsJumpForwardTrigger = "<Tab>"
+let g:UltiSnipsListSnippets = "<M-Tab>"
 " Set a custom snippets directory
 let g:UltiSnipsSnippetsDir = $HOME . "/.vim/snippets/"
 let g:UltiSnipsSnippetDirectories = ["snippets"]
@@ -230,3 +230,8 @@ nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
 
 " Remap leader for easy motion
 let g:EasyMotion_leader_key = '<Leader>'
+
+" Completion options
+set completeopt=menu,preview
+" Default completion is "normal" (what my old PHP FT plugin did)
+let g:SuperTabDefaultCompletionType = "<c-p>"
