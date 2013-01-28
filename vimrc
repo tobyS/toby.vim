@@ -10,6 +10,9 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 
+" "Sensible" defaults?
+Bundle "tpope/vim-sensible"
+
 " ... register Vundle bundles
 Bundle 'tobyS/vimtip'
 " Display trailing whitespaces
@@ -94,11 +97,8 @@ set encoding=utf-8
 
 " Automatic indention and such around expressions/brackets
 set indentexpr=
-set autoindent
 set smartindent
 
-" Incremental search
-set incsearch
 " Do not highlight search results
 set nohlsearch
 
@@ -108,7 +108,6 @@ set scrolljump=5
 set scrolloff=3
 
 " Set the autocomplete style for files
-set wildmenu
 set wildmode=list:longest
 
 " Cursor line in insert mode
@@ -119,11 +118,7 @@ autocmd InsertEnter * set cursorline
 set visualbell
 set t_vb=
 set ttyfast
-set ruler
-set laststatus=2
 
-" Repair wired terminal/vim settings
-set backspace=start,eol,indent
 " ???
 set ofu=syntaxcomplete#Complete
 " Allow file inline modelines to provide settings
@@ -148,7 +143,6 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " Enable customized non-visible character display
 " http://vimcasts.org/episodes/show-invisibles/
 nnoremap <leader>L :set list!<CR>
-set listchars=tab:▸\ ,eol:¬
 
 " Save file as root using sudo
 cnoremap w!! w !sudo tee % >/dev/null
