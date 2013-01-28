@@ -30,14 +30,20 @@ Bundle "danro/rename.vim"
 Bundle "sukima/xmledit"
 " Easy motion using <Leader><w>
 Bundle "Lokaltog/vim-easymotion"
+" Vmustache template engine, prerequisite for PDV
+Bundle "tobyS/vmustache"
+" PHP Documentor for VIM
+Bundle "tobyS/pdv"
+" New file skeletons
+Bundle "tobyS/skeletons.vim"
 
 " Testing framework for VIM scripts
 Bundle "runVimTests"
 
 " Local development
-Bundle "/home/dotxp/dev/VIM/pdv.git"
-Bundle "/home/dotxp/dev/VIM/vmustache.git"
-Bundle "/home/dotxp/dev/VIM/skeletons.git"
+" Bundle "/home/dotxp/dev/VIM/pdv.git"
+" Bundle "/home/dotxp/dev/VIM/vmustache.git"
+" Bundle "/home/dotxp/dev/VIM/skeletons.git"
 
 " Approximate colorschemes
 " Seems to be not needed
