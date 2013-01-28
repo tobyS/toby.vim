@@ -24,8 +24,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-abolish'
 " Solarized color scheme
 Bundle "altercation/vim-colors-solarized"
-" :Rename command
-Bundle "danro/rename.vim"
+" :Rename command and more shell commands
+Bundle "tpope/vim-eunuch"
 " XML editing
 Bundle "sukima/xmledit"
 " Easy motion using <Leader><w>
