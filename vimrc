@@ -41,6 +41,8 @@ Bundle "tobyS/vmustache"
 Bundle "tobyS/pdv"
 " New file skeletons
 Bundle "tobyS/skeletons.vim"
+" Maintains RST headings
+Bundle "tobyS/rst-headings.vim"
 
 " Testing framework for VIM scripts
 Bundle "runVimTests"
@@ -49,6 +51,7 @@ Bundle "runVimTests"
 " Bundle "/home/dotxp/dev/VIM/pdv.git"
 " Bundle "/home/dotxp/dev/VIM/vmustache.git"
 " Bundle "/home/dotxp/dev/VIM/skeletons.git"
+" Bundle "/home/dotxp/dev/VIM/rst-headings.vim.git"
 
 " Approximate colorschemes
 " Seems to be not needed
