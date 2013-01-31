@@ -215,7 +215,6 @@ python from powerline.bindings.vim import source_plugin; source_plugin()
 
 " Configure Ultisnips
 let g:UltiSnipsExpandTrigger = "<Tab>"
-let g:UltiSnipsJumpForwardTrigger = "<Tab>"
 let g:UltiSnipsListSnippets = "<M-Tab>"
 " Set a custom snippets directory
 let g:UltiSnipsSnippetsDir = $HOME . "/.vim/snippets/"
