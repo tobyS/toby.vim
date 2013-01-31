@@ -141,7 +141,19 @@ filetype indent on
 
 " Restore line number and column if reentering a file after having edited it
 " at least once. For this to work .viminfo in the home dir has to be writable by the user.
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+let g:restore_position_ignore = '.git/COMMIT_EDITMSG'
+au BufReadPost * call RestorePosition()
+
+func! RestorePosition()
+    if exists("g:restore_position_ignore") && match(expand("%"), g:restore_position_ignore) > -1
+        return
+    endif
+
+    if line("'\"") > 1 && line("'\"") <= line("$")
+        exe "normal! g`\""
+    endif
+endfunc
+
 
 " Enable customized non-visible character display
 " http://vimcasts.org/episodes/show-invisibles/
