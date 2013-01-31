@@ -82,8 +82,6 @@ endif
 
 " Set numbers, sort casing, tabstops and such
 set number
-set smartcase
-set ignorecase
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -92,6 +90,13 @@ set nocompatible
 set nopaste
 set hidden
 set nowrap
+
+" Be case insensitive in searches
+set ignorecase
+" If upper case letters occur, be case insensitive
+set smartcase
+" Infer the current case in insert completion
+set infercase
 
 " Set the mapleader and local map leader to ,
 let mapleader = ","
