@@ -237,10 +237,6 @@ let g:UltiSnipsListSnippets = "<M-Tab>"
 let g:UltiSnipsSnippetsDir = $HOME . "/.vim/snippets/"
 let g:UltiSnipsSnippetDirectories = ["snippets"]
 
-" Configure PDV
-let g:pdv_template_dir = $HOME . "/.vim/bundle/pdv/templates_snip"
-nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
-
 " Remap leader for easy motion
 let g:EasyMotion_leader_key = '<Leader>'
 
