@@ -146,7 +146,7 @@ filetype indent on
 
 " Restore line number and column if reentering a file after having edited it
 " at least once. For this to work .viminfo in the home dir has to be writable by the user.
-let g:restore_position_ignore = '.git/COMMIT_EDITMSG'
+let g:restore_position_ignore = '.git/COMMIT_EDITMSG\|svn-commit.tmp'
 au BufReadPost * call RestorePosition()
 
 func! RestorePosition()
