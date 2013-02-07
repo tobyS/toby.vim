@@ -30,6 +30,12 @@ Install
 
         pip install --user git+git://github.com/Lokaltog/powerline
 
+For more information about Powerline, please refer to the `Powerline
+installation docs`__ especially regarding `font installation`__.
+
+__ http://lokaltog.github.com/powerline/installation/linux.html
+__ http://lokaltog.github.com/powerline/installation/linux.html#fontconfig
+
 --------------------------
 Thanks for inspirations to
 --------------------------
