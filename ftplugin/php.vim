@@ -5,6 +5,7 @@ let g:pdv_template_dir = $HOME . "/.vim/bundle/pdv/templates_snip"
 nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
 
 let g:syntastic_phpcs_conf=" --standard=PSR2 "
+let  g:syntastic_php_phpcs_args = "--report=csv --standard=PSR2"
 
 let g:php_source_prefixes = ['src/main/php/', 'src/main/', 'src/', 'lib/']
 
