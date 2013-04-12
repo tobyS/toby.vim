@@ -88,7 +88,7 @@ set softtabstop=4
 set expandtab
 set nocompatible
 set nopaste
-set hidden
+set nohidden
 set nowrap
 
 " Be case insensitive in searches
