@@ -228,6 +228,9 @@ map <F5> :setlocal spell! spelllang=en_us<cr>
 " Map <F6> to turn spelling (de) on (VIM 7.0+)
 map <F6> :setlocal spell! spelllang=de<cr>
 
+" Exclude from Pasta
+let g:pasta_disabled_filetypes = ["tex"]
+
 python from powerline.bindings.vim import source_plugin; source_plugin()
 
 " Configure Ultisnips
