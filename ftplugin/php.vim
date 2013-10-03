@@ -20,6 +20,8 @@ func! PathToNamespace(path)
     return substitute(l:path, '/', '\\', 'g')
 endfunc
 
+nnoremap <buffer> <leader>a :! grep 'public function' % \| sort -d<CR>
+
 " Completion types to use (current buffer, other window buffers, invisible
 " buffers and included files)
 setlocal complete=.,w,b,i
