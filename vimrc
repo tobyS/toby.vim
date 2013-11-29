@@ -203,8 +203,8 @@ autocmd VimEnter * call vimtip#NextTip()
 autocmd WinEnter * call vimtip#NextTip()
 
 " Undo history between sessions
-" set undodir=~/.vim/undodir
-" set undofile
+set undodir=~/.vim/undodir
+set undofile
 set undolevels=100 "maximum number of changes that can be undone
 set undoreload=1000 "maximum number lines to save for undo on a buffer reload
 
