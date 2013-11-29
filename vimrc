@@ -20,7 +20,7 @@ Bundle 'jakobwesthoff/whitespacetrail'
 " Fancy snippet machine
 Bundle 'SirVer/ultisnips'
 " Nice title bar
-Bundle 'Lokaltog/powerline'
+Bundle 'Lokaltog/vim-powerline'
 " Syntaxt checks
 Bundle 'scrooloose/syntastic'
 " Abbreviate and convenient substitute
@@ -231,7 +231,6 @@ map <F6> :setlocal spell! spelllang=de<cr>
 " Exclude from Pasta
 let g:pasta_disabled_filetypes = ["tex"]
 
-python from powerline.bindings.vim import source_plugin; source_plugin()
 
 " Configure Ultisnips
 let g:UltiSnipsExpandTrigger = "<Tab>"
