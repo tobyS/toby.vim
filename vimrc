@@ -45,7 +45,7 @@ Bundle "tobyS/skeletons.vim"
 Bundle "tobyS/rst-headings.vim"
 
 " Testing framework for VIM scripts
-Bundle "runVimTests"
+Bundle "inkarkat/runVimTests"
 
 " Local development
 " Bundle "/home/dotxp/dev/VIM/pdv.git"
