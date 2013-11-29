@@ -73,6 +73,9 @@ Bundle 'austintaylor/vim-commaobject'
 " Fuzzy search through project files
 Bundle 'kien/ctrlp.vim'
 
+" Advanced Keyword completion
+Bundle 'szw/vim-kompleter'
+
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
 
@@ -246,4 +249,8 @@ let g:EasyMotion_leader_key = '<Leader>'
 " Completion options
 set completeopt=menu,preview
 " Default completion is "normal" (what my old PHP FT plugin did)
-let g:SuperTabDefaultCompletionType = "<c-p>"
+" let g:SuperTabDefaultCompletionType = "<c-p>"
+" Set super tab completion to Kompleter
+let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
+
+
