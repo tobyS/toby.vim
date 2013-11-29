@@ -61,8 +61,6 @@ Bundle "inkarkat/runVimTests"
 " Trying ...
 """"""""""""
 
-" Git integration
-Bundle 'tpope/vim-fugitive'
 " Rewrap argument lists
 Bundle 'jakobwesthoff/argumentrewrap'
 " Re-indents pasted code
