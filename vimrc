@@ -70,6 +70,9 @@ Bundle 'Lokaltog/vim-easymotion'
 " Make ',' an object
 Bundle 'austintaylor/vim-commaobject'
 
+" Fuzzy search through project files
+Bundle 'kien/ctrlp.vim'
+
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
 
