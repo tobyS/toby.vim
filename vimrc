@@ -76,6 +76,12 @@ Bundle 'kien/ctrlp.vim'
 " Advanced Keyword completion
 Bundle 'szw/vim-kompleter'
 
+" Background dispatching (e.g. PHPUnit)
+Bundle 'tpope/vim-dispatch'
+
+" Use PHPUnit as a compiler in VIM
+Bundle 'afternoon/vim-phpunit'
+
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
 
