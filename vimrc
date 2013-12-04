@@ -85,6 +85,10 @@ Bundle 'afternoon/vim-phpunit'
 " Advanced "f" motion for 2 characters
 Bundle 'goldfeld/vim-seek'
 
+" Pasting Gists from VIM
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
+
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
 
@@ -262,4 +266,5 @@ set completeopt=menu,preview
 " Set super tab completion to Kompleter
 let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 
-
+" Post private Gists by default
+let g:gist_post_private = 1
