@@ -82,6 +82,9 @@ Bundle 'tpope/vim-dispatch'
 " Use PHPUnit as a compiler in VIM
 Bundle 'afternoon/vim-phpunit'
 
+" Advanced "f" motion for 2 characters
+Bundle 'goldfeld/vim-seek'
+
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
 
