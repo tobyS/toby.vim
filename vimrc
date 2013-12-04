@@ -240,6 +240,12 @@ nnoremap <C-l> <C-W>l
 nnoremap <C-0> <C-W>|
 nnoremap <C-=> <C-W>=
 
+" Experiment: Disable arrow keys to finally get used to keyboard moving!
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
 " Map <F5> to turn spelling on (VIM 7.0+)
 map <F5> :setlocal spell! spelllang=en_us<cr>
 " Map <F6> to turn spelling (de) on (VIM 7.0+)
