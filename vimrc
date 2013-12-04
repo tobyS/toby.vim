@@ -232,7 +232,6 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 set completeopt=longest,menuone
 
 " Window Management
-" TODO: Doesn't work?
 nnoremap <C-j> <C-W>j
 nnoremap <C-h> <C-W>h
 nnoremap <C-k> <C-W>k
