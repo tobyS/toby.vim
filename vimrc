@@ -276,3 +276,10 @@ let g:gist_post_private = 1
 
 " <C-P> is already PDV so ,f is used for CtrlP file finder
 let g:ctrlp_map = "<leader>f"
+
+" Make moving in tabs more comfortable
+nnoremap <leader>p :tabprevious<CR>
+nnoremap <leader>n :tabnext<CR>
+" Shift version moves current tab
+nnoremap <leader><S-p> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+nnoremap <leader><S-n> :execute 'silent! tabmove ' . tabpagenr()<CR>
