@@ -263,7 +263,7 @@ let g:UltiSnipsSnippetsDir = $HOME . "/.vim/snippets/"
 let g:UltiSnipsSnippetDirectories = ["snippets"]
 
 " Remap leader for easy motion
-let g:EasyMotion_leader_key = '<Leader>'
+let g:EasyMotion_leader_key = '-'
 
 " Completion options
 set completeopt=menu,preview
