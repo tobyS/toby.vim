@@ -273,3 +273,6 @@ let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 
 " Post private Gists by default
 let g:gist_post_private = 1
+
+" <C-P> is already PDV so ,f is used for CtrlP file finder
+let g:ctrlp_map = "<leader>f"
