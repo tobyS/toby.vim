@@ -276,6 +276,12 @@ let g:gist_post_private = 1
 
 " <C-P> is already PDV so ,f is used for CtrlP file finder
 let g:ctrlp_map = "<leader>f"
+" Use regex search in CtrlP by default
+let g:ctrlp_regexp = 1
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v(\.(git|hg|svn)$|vendor/|tmp/)',
+  \ 'file': '\v\.(svg|png|jpe?g|pdf|lock|phar)$',
+  \ }
 
 " Make moving in tabs more comfortable
 nnoremap <leader>p :tabprevious<CR>
