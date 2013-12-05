@@ -2,12 +2,13 @@
 TODO
 ====
 
+To get used to
+--------------
+
+- Rempap ``]m`` and ``[m`` to more sensibly move to the next/prev method
+
 To try
 ------
 
 - https://github.com/tpope/vim-surround
   - Change surrounding chars (e.g. ' => ")
-- https://wincent.com/products/command-t
-  - Fancy file search
-- https://github.com/goldfeld/vim-seek
-  - Seek on the line
