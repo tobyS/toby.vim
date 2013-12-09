@@ -250,6 +250,9 @@ map <F5> :setlocal spell! spelllang=en_us<cr>
 " Map <F6> to turn spelling (de) on (VIM 7.0+)
 map <F6> :setlocal spell! spelllang=de<cr>
 
+" Disable w3 syntax chcker. Horribly annoying on slow connections
+let g:syntastic_html_checkers=['tidy']
+
 " Exclude from Pasta
 let g:pasta_disabled_filetypes = ["tex"]
 
