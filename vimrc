@@ -299,3 +299,6 @@ nnoremap <C-k> <C-b>
 " Jump to next/prev start of method
 nnoremap <C-m> ]m
 nnoremap <C-S-m> [m
+
+" Avoid <End> or <Esc>,<$>,<i> to jump to end of line
+inoremap jj <End>
