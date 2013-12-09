@@ -2,10 +2,25 @@
 TODO
 ====
 
+Next tips
+---------
+
+" Make moving page wise more comfortable
+nnoremap <C-j> <C-f>
+nnoremap <C-k> <C-b>
+" Jump to next/prev start of method
+nnoremap <leader>j ]m
+nnoremap <leader>k [m
+
+" Avoid <End> or <Esc>,<$>,<i> to jump to end of line
+inoremap jj <End>
+
+
+
 To get used to
 --------------
 
-- Rempap ``]m`` and ``[m`` to more sensibly move to the next/prev method
+-
 
 To try
 ------
