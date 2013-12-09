@@ -292,3 +292,10 @@ nnoremap <leader>n :tabnext<CR>
 " Shift version moves current tab
 nnoremap <leader><S-p> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <leader><S-n> :execute 'silent! tabmove ' . tabpagenr()<CR>
+
+" Make moving page wise more comfortable
+nnoremap <C-j> <C-f>
+nnoremap <C-k> <C-b>
+" Jump to next/prev start of method
+nnoremap <C-m> ]m
+nnoremap <C-S-m> [m
