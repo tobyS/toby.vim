@@ -90,6 +90,9 @@ Bundle 'goldfeld/vim-seek'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 
+" See if that fixes YAML highlighting
+Bundle 'chase/vim-ansible-yaml'
+
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
 
