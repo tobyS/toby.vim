@@ -265,8 +265,8 @@ let g:pasta_disabled_filetypes = ["tex"]
 let g:UltiSnipsExpandTrigger = "<Tab>"
 let g:UltiSnipsListSnippets = "<M-Tab>"
 " Set a custom snippets directory
-let g:UltiSnipsSnippetsDir = $HOME . "/.vim/snippets/"
-let g:UltiSnipsSnippetDirectories = ["snippets"]
+let g:UltiSnipsSnippetsDir = $HOME . "/.vim/UltiSnips/"
+let g:UltiSnipsSnippetDirectories = ["UltiSnips"]
 
 " Remap leader for easy motion
 let g:EasyMotion_leader_key = '-'
