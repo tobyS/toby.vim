@@ -303,3 +303,6 @@ nnoremap <C-S-m> [m
 
 " Avoid <End> or <Esc>,<$>,<i> to jump to end of line
 inoremap jj <End>
+
+" Activate argument rewrap
+nnoremap <leader>w :call argumentrewrap#RewrapArguments()<CR>
