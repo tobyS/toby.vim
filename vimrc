@@ -199,7 +199,7 @@ set pastetoggle=<ins>
 " Go to insert mode when <ins> pressed in normal mode
 nnoremap <silent> <ins> :setlocal paste!<CR>i
 " Switch paste mode off whenever insert mode is left
-autocmd InsertLeave <buffer> se nopaste
+autocmd InsertLeave <buffer> setlocal nopaste
 
 " Twig template highlighting
 autocmd BufRead *.twig set filetype=twig
