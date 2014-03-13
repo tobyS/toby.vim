@@ -47,6 +47,9 @@ Bundle "tobyS/rst-headings.vim"
 " Testing framework for VIM scripts
 Bundle "inkarkat/runVimTests"
 
+" Re-indents pasted code
+Bundle 'sickill/vim-pasta'
+
 " Local development
 " Bundle "/home/dotxp/dev/VIM/pdv.git"
 " Bundle "/home/dotxp/dev/VIM/vmustache.git"
@@ -63,8 +66,6 @@ Bundle "inkarkat/runVimTests"
 
 " Rewrap argument lists
 Bundle 'jakobwesthoff/argumentrewrap'
-" Re-indents pasted code
-Bundle 'sickill/vim-pasta'
 " Easy motion using <leader><leader><motion>
 Bundle 'Lokaltog/vim-easymotion'
 " Make ',' an object
