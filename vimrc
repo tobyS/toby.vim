@@ -119,9 +119,9 @@ set smartcase
 " Infer the current case in insert completion
 set infercase
 
-" Set the mapleader and local map leader to ,
-let mapleader = ","
-let maplocalleader = ","
+" Set the mapleader and local map leader to <space>
+let mapleader = "\<Space>"
+let maplocalleader = "\<Space>"
 set encoding=utf-8
 
 " Automatic indention and such around expressions/brackets
@@ -183,7 +183,7 @@ endfunc
 
 " Enable customized non-visible character display
 " http://vimcasts.org/episodes/show-invisibles/
-nnoremap <leader>L :set list!<CR>
+nnoremap <leader>l :set list!<CR>
 
 " Save file as root using sudo
 cnoremap w!! w !sudo tee % >/dev/null
