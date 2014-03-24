@@ -8,7 +8,7 @@ let g:syntastic_phpcs_conf=" --standard=PSR2 "
 let  g:syntastic_php_phpcs_args = "--report=csv --standard=PSR2"
 " let  g:syntastic_php_phpcs_args = "--report=csv --standard=ezcs"
 
-let g:php_source_prefixes = ['src/main/php/', 'src/main/', 'src/', 'lib/', 'test/phpunit/', 'test/']
+let g:php_source_prefixes = ['src/main/php/', 'src/main/', 'src/', 'lib/', 'test/phpunit/', 'test/', 'test/integration/']
 
 func! PathToNamespace(path)
     let l:path = a:path
