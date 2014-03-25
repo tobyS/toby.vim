@@ -89,6 +89,9 @@ Bundle 'mattn/gist-vim'
 " See if that fixes YAML highlighting
 Bundle 'chase/vim-ansible-yaml'
 
+" Expand region
+Bundle 'terryma/vim-expand-region'
+
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
 
