@@ -230,14 +230,6 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 " http://vim.wikia.com/wiki/VimTip1386
 set completeopt=longest,menuone
 
-" Window Management
-nnoremap <C-j> <C-W>j
-nnoremap <C-h> <C-W>h
-nnoremap <C-k> <C-W>k
-nnoremap <C-l> <C-W>l
-nnoremap <C-0> <C-W>|
-nnoremap <C-=> <C-W>=
-
 " Map <F5> to turn spelling on (VIM 7.0+)
 map <F5> :setlocal spell! spelllang=en_us<cr>
 " Map <F6> to turn spelling (de) on (VIM 7.0+)
