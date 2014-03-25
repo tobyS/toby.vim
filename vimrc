@@ -31,8 +31,6 @@ Bundle "altercation/vim-colors-solarized"
 Bundle "tpope/vim-eunuch"
 " XML editing
 Bundle "sukima/xmledit"
-" Easy motion using <Leader><w>
-Bundle "Lokaltog/vim-easymotion"
 " Insert mode autocomplete management
 Bundle "ervandew/supertab"
 " Vmustache template engine, prerequisite for PDV
@@ -66,8 +64,6 @@ Bundle 'sickill/vim-pasta'
 
 " Rewrap argument lists
 Bundle 'jakobwesthoff/argumentrewrap'
-" Easy motion using <leader><leader><motion>
-Bundle 'Lokaltog/vim-easymotion'
 " Make ',' an object
 Bundle 'austintaylor/vim-commaobject'
 
@@ -209,7 +205,6 @@ au BufRead,BufNewFile *.phps		set filetype=php
 
 " VIMTips
 let g:vimtip_tips = []
-call add(g:vimtip_tips, "Easy motion with <,><w>")
 call add(g:vimtip_tips, "Register <*> is middle mouse clipboard")
 call add(g:vimtip_tips, "Jump to matching brace: <%>")
 call add(g:vimtip_tips, "Re-indent code: <=>")
@@ -261,9 +256,6 @@ let g:UltiSnipsListSnippets = "<M-Tab>"
 " Set a custom snippets directory
 let g:UltiSnipsSnippetsDir = $HOME . "/.vim/UltiSnips/"
 let g:UltiSnipsSnippetDirectories = ["UltiSnips"]
-
-" Remap leader for easy motion
-let g:EasyMotion_leader_key = '-'
 
 " Completion options
 set completeopt=menu,preview
