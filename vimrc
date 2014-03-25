@@ -244,7 +244,6 @@ let g:syntastic_html_checkers=['tidy']
 " Exclude from Pasta
 let g:pasta_disabled_filetypes = ["tex"]
 
-
 " Configure Ultisnips
 let g:UltiSnipsExpandTrigger = "<Tab>"
 let g:UltiSnipsListSnippets = "<M-Tab>"
