@@ -270,8 +270,8 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " Make moving in tabs more comfortable
-nnoremap <leader>p :tabprevious<CR>
-nnoremap <leader>n :tabnext<CR>
+nnoremap <leader>j :tabprevious<CR>
+nnoremap <leader>k :tabnext<CR>
 " Shift version moves current tab
 nnoremap <leader><S-p> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <leader><S-n> :execute 'silent! tabmove ' . tabpagenr()<CR>
@@ -299,3 +299,11 @@ let g:expand_region_text_objects_php = {
     \ 'ib'  :1,
     \ 'iB'  :1
     \ }
+
+" y/p/d with system clipboard through leader
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
