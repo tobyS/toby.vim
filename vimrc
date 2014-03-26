@@ -208,11 +208,10 @@ au BufRead,BufNewFile *.phps		set filetype=php
 
 " VIMTips
 let g:vimtip_tips = []
-call add(g:vimtip_tips, "Register <*> is middle mouse clipboard")
-call add(g:vimtip_tips, "Jump to matching brace: <%>")
 call add(g:vimtip_tips, "Re-indent code: <=>")
 call add(g:vimtip_tips, "Indent inner / outer block: >iB / >aB")
 call add(g:vimtip_tips, ":r <file> paste the given file at the current position")
+call add(g:vimtip_tips, "<s><char><char> jump to next 2 char search")
 
 autocmd VimEnter * call vimtip#NextTip()
 autocmd WinEnter * call vimtip#NextTip()
