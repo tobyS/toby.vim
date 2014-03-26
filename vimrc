@@ -286,3 +286,17 @@ nnoremap <C-S-m> [m
 
 " Activate argument rewrap
 nnoremap <leader>w :call argumentrewrap#RewrapArguments()<CR>
+
+" Expand region with v-v-v...
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
+
+" PHP expand objects
+let g:expand_region_text_objects_php = {
+    \ 'iw'  :0,
+    \ 'i"'  :0,
+    \ 'i''' :0,
+    \ 'i]'  :1,
+    \ 'ib'  :1,
+    \ 'iB'  :1
+    \ }
