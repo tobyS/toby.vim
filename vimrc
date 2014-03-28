@@ -217,6 +217,8 @@ call add(g:vimtip_tips, "Indent inner / outer block: >iB / >aB")
 call add(g:vimtip_tips, ":r <file> paste the given file at the current position")
 call add(g:vimtip_tips, "<s><char><char> jump to next 2 char search")
 call add(g:vimtip_tips, "<v><v><v>... expands visual region!")
+call add(g:vimtip_tips, "<c><i><a> = change inner argument")
+call add(g:vimtip_tips, "<c><a><a> = change outer argument")
 
 autocmd VimEnter * call vimtip#NextTip()
 autocmd WinEnter * call vimtip#NextTip()
