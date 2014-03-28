@@ -48,6 +48,9 @@ Bundle "inkarkat/runVimTests"
 " Re-indents pasted code
 Bundle 'sickill/vim-pasta'
 
+" Expand region
+Bundle 'terryma/vim-expand-region'
+
 " Local development
 " Bundle "/home/dotxp/dev/VIM/pdv.git"
 " Bundle "/home/dotxp/dev/VIM/vmustache.git"
@@ -88,9 +91,6 @@ Bundle 'mattn/gist-vim'
 
 " See if that fixes YAML highlighting
 Bundle 'chase/vim-ansible-yaml'
-
-" Expand region
-Bundle 'terryma/vim-expand-region'
 
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
