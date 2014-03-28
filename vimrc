@@ -74,8 +74,6 @@ Bundle 'mattn/gist-vim'
 
 " Rewrap argument lists
 Bundle 'jakobwesthoff/argumentrewrap'
-" Make ',' an object
-Bundle 'austintaylor/vim-commaobject'
 
 " Fuzzy search through project files
 Bundle 'kien/ctrlp.vim'
