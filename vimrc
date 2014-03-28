@@ -100,6 +100,10 @@ if has("autocmd")
     autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
+"""""""""""""""""""
+" Standard settings
+"""""""""""""""""""
+
 " Set numbers, sort casing, tabstops and such
 set number
 set tabstop=4
@@ -110,6 +114,7 @@ set nocompatible
 set nopaste
 set nohidden
 set nowrap
+set encoding=utf-8
 
 " Be case insensitive in searches
 set ignorecase
@@ -121,7 +126,6 @@ set infercase
 " Set the mapleader and local map leader to <space>
 let mapleader = "\<Space>"
 let maplocalleader = "\<Space>"
-set encoding=utf-8
 
 " Automatic indention and such around expressions/brackets
 set indentexpr=
@@ -179,7 +183,6 @@ func! RestorePosition()
     endif
 endfunc
 
-
 " Enable customized non-visible character display
 " http://vimcasts.org/episodes/show-invisibles/
 nnoremap <leader>l :set list!<CR>
@@ -212,6 +215,7 @@ call add(g:vimtip_tips, "Re-indent code: <=>")
 call add(g:vimtip_tips, "Indent inner / outer block: >iB / >aB")
 call add(g:vimtip_tips, ":r <file> paste the given file at the current position")
 call add(g:vimtip_tips, "<s><char><char> jump to next 2 char search")
+call add(g:vimtip_tips, "<v><v><v>... expands visual region!")
 
 autocmd VimEnter * call vimtip#NextTip()
 autocmd WinEnter * call vimtip#NextTip()
