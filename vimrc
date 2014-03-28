@@ -51,6 +51,13 @@ Bundle 'sickill/vim-pasta'
 " Expand region
 Bundle 'terryma/vim-expand-region'
 
+" Advanced Keyword completion
+Bundle 'szw/vim-kompleter'
+
+" Pasting Gists from VIM
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
+
 " Local development
 " Bundle "/home/dotxp/dev/VIM/pdv.git"
 " Bundle "/home/dotxp/dev/VIM/vmustache.git"
@@ -73,9 +80,6 @@ Bundle 'austintaylor/vim-commaobject'
 " Fuzzy search through project files
 Bundle 'kien/ctrlp.vim'
 
-" Advanced Keyword completion
-Bundle 'szw/vim-kompleter'
-
 " Background dispatching (e.g. PHPUnit)
 Bundle 'tpope/vim-dispatch'
 
@@ -84,10 +88,6 @@ Bundle 'afternoon/vim-phpunit'
 
 " Advanced "f" motion for 2 characters
 Bundle 'goldfeld/vim-seek'
-
-" Pasting Gists from VIM
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
 
 " See if that fixes YAML highlighting
 Bundle 'chase/vim-ansible-yaml'
