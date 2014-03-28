@@ -1,1 +1,1 @@
-inoremap { {<CR>}<C-O>O
+inoremap <buffer> { {<CR>}<C-O>O
