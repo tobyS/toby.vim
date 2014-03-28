@@ -303,8 +303,12 @@ let g:expand_region_text_objects_php = {
     \ 'i"'  :0,
     \ 'i''' :0,
     \ 'i]'  :1,
-    \ 'ib'  :1,
-    \ 'iB'  :1
+    \ 'ia'  :0,
+    \ 'aa'  :0,
+    \ 'i)'  :1,
+    \ 'a)'  :1,
+    \ 'i}'  :1,
+    \ 'a}'  :1
     \ }
 
 " y/p/d with system clipboard through leader
