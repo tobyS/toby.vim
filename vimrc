@@ -295,7 +295,7 @@ nnoremap <leader>w :call argumentrewrap#RewrapArguments()<CR>
 
 " Expand region with v-v-v...
 vmap v <Plug>(expand_region_expand)
-vmap <C-v> <Plug>(expand_region_shrink)
+vmap <S-v> <Plug>(expand_region_shrink)
 
 " PHP expand objects
 let g:expand_region_text_objects_php = {
