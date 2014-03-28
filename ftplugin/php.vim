@@ -33,3 +33,7 @@ setlocal complete=.,w,b,i,k
 " Mappings for PHPUnit execution using Dispatch
 nnoremap <buffer> <leader>t :Make<CR>
 nnoremap <buffer> <leader>T :Make %<CR>
+
+" Map MakeRealFunction()
+vnoremap <buffer> <leader>rf :call MakeRealFunction()<cr>
+nnoremap <buffer> <leader>rf :call MakeRealFunction()<cr>
