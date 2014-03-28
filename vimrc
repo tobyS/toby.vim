@@ -90,6 +90,9 @@ Bundle 'goldfeld/vim-seek'
 " See if that fixes YAML highlighting
 Bundle 'chase/vim-ansible-yaml'
 
+" Argument text object "a"
+Bundle 'vim-scripts/argtextobj.vim'
+
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
 
