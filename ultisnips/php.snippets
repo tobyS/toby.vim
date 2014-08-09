@@ -18,3 +18,22 @@ private function ${1:name}(${2:$param})
     ${VISUAL}${0:return null;}
 }
 endsnippet
+
+snippet ctor "Constructor" !b
+`!p
+snip.rv = ""
+regex = re.compile("(?:\w+\s+)?\$([^, ]+),?")
+argumentMatches = regex.findall(t[1])
+for variable in argumentMatches:
+	snip.rv += snip.mkline("private $" + variable + ";\n")
+`
+public function __construct(${1})
+{
+`!p
+snip.shift()
+snip.rv = ""
+for variable in argumentMatches:
+	snip.rv += snip.mkline("$this->" + variable + " = $" + variable + ";\n")
+`
+}
+endsnippet
