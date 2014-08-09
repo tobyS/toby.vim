@@ -91,8 +91,8 @@ Bundle 'goldfeld/vim-seek'
 " See if that fixes YAML highlighting
 Bundle 'chase/vim-ansible-yaml'
 
-" Argument text object "a"
-Bundle 'vim-scripts/argtextobj.vim'
+" Move arguments & argument text object "a"
+Bundle 'AndrewRadev/sideways.vim'
 
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
@@ -220,6 +220,7 @@ call add(g:vimtip_tips, "<s><char><char> jump to next 2 char search")
 call add(g:vimtip_tips, "<v><v><v>... expands visual region!")
 call add(g:vimtip_tips, "<c><i><a> = change inner argument")
 call add(g:vimtip_tips, "<c><a><a> = change outer argument")
+call add(g:vimtip_tips, "<C-l>/<C-h> = move arguments left/right")
 
 autocmd VimEnter * call vimtip#NextTip()
 autocmd WinEnter * call vimtip#NextTip()
@@ -319,3 +320,12 @@ nmap <Leader>p "*p
 nmap <Leader>P "*P
 vmap <Leader>p "*p
 vmap <Leader>P "*P
+
+" Argument move & argument text object
+nnoremap <c-h> :SidewaysLeft<cr>
+nnoremap <c-l> :SidewaysRight<cr>
+
+omap aa <Plug>SidewaysArgumentTextobjA
+xmap aa <Plug>SidewaysArgumentTextobjA
+omap ia <Plug>SidewaysArgumentTextobjI
+xmap ia <Plug>SidewaysArgumentTextobjI
