@@ -1,6 +1,7 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
+set rtp+=/usr/share/vim/addons
 
 " Init Vundle
 set rtp+=~/.vim/bundle/vundle/
