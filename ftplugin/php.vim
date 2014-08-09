@@ -21,7 +21,7 @@ func! PathToNamespace(path)
     return substitute(l:path, '/', '\\', 'g')
 endfunc
 
-nnoremap <buffer> <leader>a :! grep '^\s*public[^(]\+function' % \| sort -d<CR>
+nnoremap <buffer> <leader>a :! grep -n '^\s*public[^(]\+function' % \| sort -d<CR>
 
 " Completion for PHP keywords
 set dictionary+=~/.vim/ftplugin/php/keywords.txt
