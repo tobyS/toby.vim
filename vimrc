@@ -144,6 +144,9 @@ set scrolloff=3
 " Set the autocomplete style for files
 set wildmode=list:longest
 
+" Deactivate original mode indicator, powerline does that
+set noshowmode
+
 " Cursor line in insert mode
 autocmd InsertLeave * set nocursorline
 autocmd InsertEnter * set cursorline
