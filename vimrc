@@ -193,6 +193,13 @@ nnoremap <leader>l :set list!<CR>
 " Save file as root using sudo
 cnoremap w!! w !sudo tee % >/dev/null
 
+" Alias common w/q misspells to their right meaning
+command WQ wq
+command Wq wq
+command W w
+command Q q
+
+
 " MovingThroughCamelCaseWords
 nnoremap <silent><C-Left>  :<C-u>cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%^','bW')<CR>
 nnoremap <silent><C-Right> :<C-u>cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%$','W')<CR>
