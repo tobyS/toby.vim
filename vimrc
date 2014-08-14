@@ -277,14 +277,15 @@ let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 " Post private Gists by default
 let g:gist_post_private = 1
 
-" <C-P> is already PDV so ,f is used for CtrlP file finder
-let g:ctrlp_map = "<leader>f"
-" Use regex search in CtrlP by default
-let g:ctrlp_regexp = 1
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v(\.(git|hg|svn)$|vendor/|tmp/)',
-  \ 'file': '\v\.(svg|png|jpe?g|pdf|lock|phar)$',
-  \ }
+" <C-P> is already PDV so <leader>p is used for CtrlP file finder
+let g:ctrlp_map = "<leader>p"
+" Use regex search in CtrlP by default (switch off, we want to use fuzzzzy!)
+" let g:ctrlp_regexp = 1
+set wildignore+=cache/**,src/var/**,src/data/**,.abc/**,build/**
+" Ignore VCS dirs (copied from docs)
+let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|vendor)$'
+" I want to search the current working dir only
+let g:ctrlp_working_path_mode = ''
 
 " Make moving in tabs more comfortable
 nnoremap <leader>j :tabprevious<CR>
