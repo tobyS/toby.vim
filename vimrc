@@ -30,8 +30,6 @@ Bundle 'tpope/vim-abolish'
 Bundle "altercation/vim-colors-solarized"
 " :Rename command and more shell commands
 Bundle "tpope/vim-eunuch"
-" XML editing
-Bundle "sukima/xmledit"
 " Insert mode autocomplete management
 Bundle "ervandew/supertab"
 " Vmustache template engine, prerequisite for PDV
