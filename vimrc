@@ -199,7 +199,6 @@ command Wq wq
 command W w
 command Q q
 
-
 " MovingThroughCamelCaseWords
 nnoremap <silent><C-Left>  :<C-u>cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%^','bW')<CR>
 nnoremap <silent><C-Right> :<C-u>cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%$','W')<CR>
@@ -277,11 +276,11 @@ let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 " Post private Gists by default
 let g:gist_post_private = 1
 
-" <C-P> is already PDV so <leader>p is used for CtrlP file finder
-let g:ctrlp_map = "<leader>p"
+" <C-P> is already PDV so <leader>o is used for CtrlP file finder
+let g:ctrlp_map = "<leader>o"
 " Use regex search in CtrlP by default (switch off, we want to use fuzzzzy!)
 " let g:ctrlp_regexp = 1
-set wildignore+=cache/**,src/var/**,src/data/**,.abc/**,build/**
+set wildignore+=cache,src/var,src/data,.abc,build
 " Ignore VCS dirs (copied from docs)
 let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|vendor)$'
 " I want to search the current working dir only
