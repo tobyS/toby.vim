@@ -51,7 +51,7 @@ Bundle 'sickill/vim-pasta'
 Bundle 'terryma/vim-expand-region'
 
 " Advanced Keyword completion
-Bundle 'szw/vim-kompleter'
+" Deactivated temporarily to try fancy PHP autocomplete: Bundle 'szw/vim-kompleter'
 
 " Pasting Gists from VIM
 Bundle 'mattn/webapi-vim'
@@ -91,6 +91,15 @@ Bundle 'chase/vim-ansible-yaml'
 
 " Move arguments & argument text object "a"
 Bundle 'AndrewRadev/sideways.vim'
+
+" Required by phpcomplete-extended
+" Required building custom extension on your platform
+Bundle 'Shougo/vimproc.vim'
+" Semantical autocomplete for PHP finally?!?
+Bundle 'm2mdas/phpcomplete-extended'
+
+" Capture Ex command output in a scratch buffer
+Bundle 'tyru/capture.vim'
 
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
@@ -268,10 +277,8 @@ let g:UltiSnipsSnippetDirectories = ["ultisnips"]
 
 " Completion options
 set completeopt=menu,preview
-" Default completion is "normal" (what my old PHP FT plugin did)
-" let g:SuperTabDefaultCompletionType = "<c-p>"
-" Set super tab completion to Kompleter
-let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
+" Attempt to do semantic completion, then fall back to keywords
+let g:SuperTabDefaultCompletionType = "context"
 
 " Post private Gists by default
 let g:gist_post_private = 1
@@ -337,3 +344,8 @@ omap aa <Plug>SidewaysArgumentTextobjA
 xmap aa <Plug>SidewaysArgumentTextobjA
 omap ia <Plug>SidewaysArgumentTextobjI
 xmap ia <Plug>SidewaysArgumentTextobjI
+
+" phpcomplete-extended
+
+let g:phpcomplete_index_composer_command = 'composer'
+autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
