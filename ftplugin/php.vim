@@ -41,3 +41,24 @@ nnoremap <buffer> <leader>rf :call MakeRealFunction()<cr>
 " Getter/Setter Plugin
 nnoremap <LocalLeader>i :InsertGetterSetter<CR>
 vnoremap <LocalLeader>i :InsertGetterSetter<CR>
+
+let b:phpgetset_getterTemplate =
+  \ "\n" .
+  \ "    /**\n" .
+  \ "     * @return\n" .
+  \ "     */\n" .
+  \ "    public function %funcname%()\n" .
+  \ "    {\n" .
+  \ "        return $this->%varname%;\n" .
+  \ "    }"
+
+let b:phpgetset_setterTemplate =
+  \ "\n" .
+  \ "    /**\n" .
+  \ "     * @param  $%varname%\n" .
+  \ "     * @return void\n" .
+  \ "     */\n" .
+  \ "    public function %funcname%($%varname%)\n" .
+  \ "    {\n" .
+  \ "        $this->%varname% = $%varname%;\n" .
+  \ "    }"
