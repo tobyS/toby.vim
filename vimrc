@@ -3,6 +3,8 @@ filetype off                   " required!
 
 set rtp+=/usr/share/vim/addons
 
+let g:no_plugin_maps=1 
+
 " Init Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -100,6 +102,8 @@ Bundle 'm2mdas/phpcomplete-extended'
 
 " Capture Ex command output in a scratch buffer
 Bundle 'tyru/capture.vim'
+
+Bundle 'docteurklein/php-getter-setter.vim'
 
 " Required after Vundle did its job.
 filetype plugin indent on     " required!

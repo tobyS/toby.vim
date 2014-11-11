@@ -37,3 +37,7 @@ nnoremap <buffer> <leader>T :Make %<CR>
 " Map MakeRealFunction()
 vnoremap <buffer> <leader>rf :call MakeRealFunction()<cr>
 nnoremap <buffer> <leader>rf :call MakeRealFunction()<cr>
+
+" Getter/Setter Plugin
+nnoremap <LocalLeader>i :InsertGetterSetter<CR>
+vnoremap <LocalLeader>i :InsertGetterSetter<CR>
