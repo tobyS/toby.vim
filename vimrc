@@ -22,8 +22,11 @@ Bundle 'tobyS/vimtip'
 Bundle 'jakobwesthoff/whitespacetrail'
 " Fancy snippet machine
 Bundle 'SirVer/ultisnips'
+
 " Nice title bar
-Bundle 'Lokaltog/vim-powerline'
+" Bundle 'powerline/powerline'
+Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+
 " Syntaxt checks
 Bundle 'scrooloose/syntastic'
 " Abbreviate and convenient substitute
