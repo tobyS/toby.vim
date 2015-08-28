@@ -107,6 +107,8 @@ Bundle 'm2mdas/phpcomplete-extended'
 " Capture Ex command output in a scratch buffer
 Bundle 'tyru/capture.vim'
 
+" Try out VIM LaTeX integration
+Bundle 'LaTeX-Box-Team/LaTeX-Box'
 
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
