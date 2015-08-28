@@ -37,3 +37,9 @@ for variable in argumentMatches:
 `
 }
 endsnippet
+
+snippet mock "PHPUnit Mock Object"
+$this->getMockBuilder('${1}')
+    ->disableOriginalConstructor()
+    ->getMock();
+endsnippet
