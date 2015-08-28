@@ -39,8 +39,8 @@ vnoremap <buffer> <leader>rf :call MakeRealFunction()<cr>
 nnoremap <buffer> <leader>rf :call MakeRealFunction()<cr>
 
 " Getter/Setter Plugin
-nnoremap <LocalLeader>i :InsertGetterSetter<CR>
-vnoremap <LocalLeader>i :InsertGetterSetter<CR>
+nnoremap <buffer> <LocalLeader>i :call phpacc#GenerateAccessors()<CR>
+vnoremap <buffer> <LocalLeader>i :call phpacc#GenerateAccessors()<CR>
 
 let b:phpgetset_getterTemplate =
   \ "\n" .
