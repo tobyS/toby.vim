@@ -67,6 +67,7 @@ Bundle 'mattn/gist-vim'
 " Bundle "/home/dotxp/dev/VIM/vmustache.git"
 " Bundle "/home/dotxp/dev/VIM/skeletons.git"
 " Bundle "/home/dotxp/dev/VIM/rst-headings.vim.git"
+Bundle "/home/dotxp/dev/VIM/php-accessor.vim.git"
 
 " Approximate colorschemes
 " Seems to be not needed
@@ -106,7 +107,6 @@ Bundle 'm2mdas/phpcomplete-extended'
 " Capture Ex command output in a scratch buffer
 Bundle 'tyru/capture.vim'
 
-Bundle 'docteurklein/php-getter-setter.vim'
 
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
@@ -356,3 +356,5 @@ xmap ia <Plug>SidewaysArgumentTextobjI
 
 let g:phpcomplete_index_composer_command = 'composer'
 autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
+
+let g:phpacc_template_dir = "/home/dotxp/dev/VIM/php-accessor.vim.git/templates"
