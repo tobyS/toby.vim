@@ -69,10 +69,6 @@ Bundle 'mattn/gist-vim'
 " Bundle "/home/dotxp/dev/VIM/rst-headings.vim.git"
 Bundle "/home/dotxp/dev/VIM/php-accessor.vim.git"
 
-" Approximate colorschemes
-" Seems to be not needed
-" Bundle 'godlygeek/csapprox'
-
 """"""""""""
 " Trying ...
 """"""""""""
@@ -82,12 +78,6 @@ Bundle 'jakobwesthoff/argumentrewrap'
 
 " Fuzzy search through project files
 Bundle 'kien/ctrlp.vim'
-
-" Background dispatching (e.g. PHPUnit)
-Bundle 'tpope/vim-dispatch'
-
-" Use PHPUnit as a compiler in VIM
-Bundle 'afternoon/vim-phpunit'
 
 " Advanced "f" motion for 2 characters
 Bundle 'goldfeld/vim-seek'
@@ -104,11 +94,11 @@ Bundle 'Shougo/vimproc.vim'
 " Semantical autocomplete for PHP finally?!?
 Bundle 'm2mdas/phpcomplete-extended'
 
-" Capture Ex command output in a scratch buffer
-Bundle 'tyru/capture.vim'
-
 " Try out VIM LaTeX integration
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
+
+" Try Golang integration
+Bundle 'fatih/vim-go'
 
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
@@ -271,8 +261,8 @@ map <F5> :setlocal spell! spelllang=en_us<cr>
 " Map <F6> to turn spelling (de) on (VIM 7.0+)
 map <F6> :setlocal spell! spelllang=de<cr>
 
-" Disable w3 syntax chcker. Horribly annoying on slow connections
-let g:syntastic_html_checkers=['tidy']
+" Disable all checks for HTML in Syntastic
+let g:syntastic_ignore_extensions='\c\v^([gx]?z|lzma|html|bz2)$'
 
 " Exclude from Pasta
 let g:pasta_disabled_filetypes = ["tex"]
