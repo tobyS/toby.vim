@@ -62,6 +62,12 @@ Bundle 'terryma/vim-expand-region'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 
+" Fuzzy search through project files
+Bundle 'ctrlpvim/ctrlp.vim'
+
+" Move arguments & argument text object "a"
+Bundle 'AndrewRadev/sideways.vim'
+
 " Local development
 " Bundle "/home/dotxp/dev/VIM/pdv.git"
 " Bundle "/home/dotxp/dev/VIM/vmustache.git"
@@ -76,17 +82,8 @@ Bundle "/home/dotxp/dev/VIM/php-accessor.vim.git"
 " Rewrap argument lists
 Bundle 'jakobwesthoff/argumentrewrap'
 
-" Fuzzy search through project files
-Bundle 'ctrlpvim/ctrlp.vim'
-
-" Advanced "f" motion for 2 characters
-Bundle 'goldfeld/vim-seek'
-
 " See if that fixes YAML highlighting
 Bundle 'chase/vim-ansible-yaml'
-
-" Move arguments & argument text object "a"
-Bundle 'AndrewRadev/sideways.vim'
 
 " Try out VIM LaTeX integration
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
