@@ -91,6 +91,9 @@ Bundle 'LaTeX-Box-Team/LaTeX-Box'
 " Try Golang integration
 Bundle 'fatih/vim-go'
 
+" Multichange strings in visual area
+Bundle 'AndrewRadev/multichange.vim'
+
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
 
@@ -336,5 +339,8 @@ omap aa <Plug>SidewaysArgumentTextobjA
 xmap aa <Plug>SidewaysArgumentTextobjA
 omap ia <Plug>SidewaysArgumentTextobjI
 xmap ia <Plug>SidewaysArgumentTextobjI
+
+" Multichange mapping
+let g:multichange_mapping = '<Leader>m'
 
 let g:phpacc_template_dir = "/home/dotxp/dev/VIM/php-accessor.vim.git/templates"
