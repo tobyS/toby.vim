@@ -77,7 +77,7 @@ Bundle "/home/dotxp/dev/VIM/php-accessor.vim.git"
 Bundle 'jakobwesthoff/argumentrewrap'
 
 " Fuzzy search through project files
-Bundle 'kien/ctrlp.vim'
+Bundle 'ctrlpvim/ctrlp.vim'
 
 " Advanced "f" motion for 2 characters
 Bundle 'goldfeld/vim-seek'
@@ -87,12 +87,6 @@ Bundle 'chase/vim-ansible-yaml'
 
 " Move arguments & argument text object "a"
 Bundle 'AndrewRadev/sideways.vim'
-
-" Required by phpcomplete-extended
-" Required building custom extension on your platform
-Bundle 'Shougo/vimproc.vim'
-" Semantical autocomplete for PHP finally?!?
-Bundle 'm2mdas/phpcomplete-extended'
 
 " Try out VIM LaTeX integration
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
@@ -288,9 +282,11 @@ let g:ctrlp_map = "<leader>o"
 " let g:ctrlp_regexp = 1
 set wildignore+=cache,src/var,src/data,.abc,build
 " Ignore VCS dirs (copied from docs)
-let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|vendor)$'
+" let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|vendor)$'
 " I want to search the current working dir only
 let g:ctrlp_working_path_mode = ''
+" Ignore everything that is in .gitignore
+let g:ctrlp_user_command = ['.git', 'cd %s; and git ls-files -co --exclude-standard']
 
 " Make moving in tabs more comfortable
 nnoremap <leader>j :tabprevious<CR>
@@ -343,10 +339,5 @@ omap aa <Plug>SidewaysArgumentTextobjA
 xmap aa <Plug>SidewaysArgumentTextobjA
 omap ia <Plug>SidewaysArgumentTextobjI
 xmap ia <Plug>SidewaysArgumentTextobjI
-
-" phpcomplete-extended
-
-let g:phpcomplete_index_composer_command = 'composer'
-autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
 
 let g:phpacc_template_dir = "/home/dotxp/dev/VIM/php-accessor.vim.git/templates"
